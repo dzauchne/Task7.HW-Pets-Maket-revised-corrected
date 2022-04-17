@@ -1,0 +1,260 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        /*border: 1px solid green;*/
+    }
+    
+    header {
+        width: 100%;
+        background-color: white;
+    }
+    
+    header .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*border: 1px solid red;*/
+    }
+    
+    nav {
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    
+    nav li {
+        margin-left: 35px;
+    }
+    
+    .logo-wrapper a {
+        font: 400 32px Georgia;
+        text-transform: capitalize;
+        letter-spacing: 0.8px;
+        padding-bottom: 55px;
+        color: #545454;
+        text-decoration: none;
+    }
+    
+    nav a {
+        color: black;
+        text-decoration: none;
+        font: 400 15px Arial;
+        color: #545454;
+    }
+    
+    li:active {
+        border-bottom: 3px solid #F1CDB3;
+        color: white;
+    }
+    
+    p {
+        color: #292929;
+        padding-top: 10px;
+        font: 400 15px Arial;
+        letter-spacing: 1px;
+    }
+    
+    main {
+        background-color: #F6F6F6;
+    }
+    
+    main .container {
+        height: 1342px;
+        /*border: 1px solid red;*/
+        max-width: 1200px;
+        padding: 80px 0 100px;
+        margin: auto;
+    }
+    
+    main .container .candidates {
+        display: inline-block;
+    }
+    
+    .candidates h3 {
+        width: 400px;
+        height: 90px;
+        font: 400 35px Georgia;
+        color: #545454;
+        line-height: 43px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+    }
+    
+    .cards-of-pets {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* flex-basis: 270px;*/
+    }
+    
+    .katrine,
+    .jennifer,
+    .woody,
+    .sophia,
+    .timmy,
+    .charly,
+    .scarlett,
+    .freddie {
+        margin-top: 30px;
+        text-align: center;
+        background-color: #FAFAFA;
+    }
+    
+    .katrine p,
+    .jennifer p,
+    .woody p,
+    .sophia p,
+    .timmy p,
+    .charly p,
+    .scarlett p,
+    .freddie p {
+        padding-top: 30px;
+        font: 400 20px Georgia;
+        line-height: 23px;
+        text-align: center;
+        color: #545454;
+    }
+    
+    .learn-more {
+        display: inline-block;
+        text-align: center;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        margin: 40px 0px;
+        font: 400 17px Georgia;
+        padding: 15px 43px;
+        text-decoration: none;
+        color: #292929;
+    }
+    
+    .learn-more:active {
+        border-bottom: 3px solid #F1CDB3;
+        background-color: #F1CDB3;
+    }
+    
+    .pets-nav {
+        padding-top: 60px;
+        width: 340px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .pets-nav-button {
+        width: 52px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        font: 400 20px Georgia;
+    }
+    
+    .pets-nav-button .disabled {
+        border: 2px solid #CDCDCD;
+        background-color: #CDCDCD;
+    }
+    
+    .pets-nav-button .active-page {
+        border: 2px solid #F1CDB3;
+        background: #F1CDB3;
+    }
+    
+    .pets-nav-button .active-nav {
+        border: 2px solid #F1CDB3;
+        color: #F1CDB3;
+    }
+    /*граница кнопок не окрасилась */
+    
+    footer {
+        background: linear-gradient(to right, #7D604B, #251000);
+    }
+    
+    footer .container {
+        height: 350px;
+        /* border: 1px solid red;*/
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+    }
+    /*ЛОГОТИПЫ вставлять ВНУТРИ ПАРАГРАФА ПСЕВДОЭЛЕМЕНТОМ!!!!!!*/
+    
+    .contacts-address {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contacts-address>div {
+        /*Вложенность 1го уровня:только те дивы, которые вложены во flex-wrapper*/
+        width: 300px;
+    }
+    
+    .contact-details h3,
+    .address-details h3 {
+        padding-top: 16px;
+        font: 400 35px Georgia;
+        color: white;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+    
+    footer.contact-details .email {
+        background-image: url(./images/mail.svg) no-repeat left center;
+        width: 40px;
+        height: 26px;
+        padding-top: 45px;
+    }
+    
+    footer .contact-details .tel {
+        background-image: url(./images/phone.svg) no-repeat left center;
+    }
+    
+    footer .contact-details .email a,
+    footer .contact-details .tel a {
+        font: 400 20px Georgia;
+        color: #F1CDB3;
+        text-decoration: none;
+        line-height: 23px;
+    }
+    
+    footer .address-details .local {
+        background-image: url(./images/pin.svg) no-repeat left center;
+        padding-left: 42px;
+    }
+    
+    footer .contact-details p,
+    footer .address-details p {
+        min-height: 46px;
+        padding-left: 60px;
+        color: #F1CDB3;
+        text-align: left;
+        font: 400 20px Georgia;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+    }
+    
+    footer .contact-details p {
+        padding-top: 42px;
+    }
+    
+    footer .address-details p {
+        padding-top: 33px;
+    }
+    /*Анна, насколько я плохо сделала прошлый раз футер делая его  на свой манер? Я  сейчас так намучалась, пока исправляла его, делая по образцу. И ,честно, сказать, я не очень поняла, как Вы его сделали... Псевдоэлементы у меня также не проявились, как только я задавала no-repeat и т.д.:(( Я картинки-ссылки в моём предыдущем футере приклеивала position-ами.  Потратила на футер столько же времени , как на весь проект "Responsive Layout"... */
